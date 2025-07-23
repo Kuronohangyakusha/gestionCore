@@ -1,5 +1,5 @@
 {
-    "name": "table/core",
+    "name": "table00/core",
     "description": "core de notre projet",
     "autoload": {
         "psr-4": {
