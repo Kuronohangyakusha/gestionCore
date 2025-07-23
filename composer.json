@@ -1,0 +1,15 @@
+{
+    "name": "table0/core",
+    "description": "core de notre projet",
+    "autoload": {
+        "psr-4": {
+            "Ciara\\Cor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "table0"
+        }
+    ],
+    "require": {}
+}
