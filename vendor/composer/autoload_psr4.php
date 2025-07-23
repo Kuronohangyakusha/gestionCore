@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Ciara\\Cor\\' => array($baseDir . '/src'),
+    'App\\Core\\Middlewares\\' => array($baseDir . '/core/middlewares'),
+    'App\\Core\\Abstract\\' => array($baseDir . '/core/abstract'),
+    'App\\Core\\' => array($baseDir . '/core'),
 );

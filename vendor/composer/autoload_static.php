@@ -7,21 +7,43 @@ namespace Composer\Autoload;
 class ComposerStaticInita23b2a195e578c1472ea16eed9418981
 {
     public static $prefixLengthsPsr4 = array (
-        'C' => 
+        'A' => 
         array (
-            'Ciara\\Cor\\' => 10,
+            'App\\Core\\Middlewares\\' => 21,
+            'App\\Core\\Abstract\\' => 18,
+            'App\\Core\\' => 9,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Ciara\\Cor\\' => 
+        'App\\Core\\Middlewares\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/core/middlewares',
+        ),
+        'App\\Core\\Abstract\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core/abstract',
+        ),
+        'App\\Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
         ),
     );
 
     public static $classMap = array (
+        'App\\Core\\Abstract\\AbstractController' => __DIR__ . '/../..' . '/core/abstract/AbstractController.php',
+        'App\\Core\\Abstract\\AbstractEntity' => __DIR__ . '/../..' . '/core/abstract/AbstractEntity.php',
+        'App\\Core\\Abstract\\AbstractRepository' => __DIR__ . '/../..' . '/core/abstract/AbstractRepository.php',
+        'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
+        'App\\Core\\Database' => __DIR__ . '/../..' . '/core/Database.php',
+        'App\\Core\\ImageService' => __DIR__ . '/../..' . '/core/ImageService.php',
+        'App\\Core\\Middlewares\\Auth' => __DIR__ . '/../..' . '/core/middlewares/Auth.php',
+        'App\\Core\\Middlewares\\CryptPassword' => __DIR__ . '/../..' . '/core/middlewares/CryptPassword.php',
+        'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'App\\Core\\Session' => __DIR__ . '/../..' . '/core/Session.php',
+        'App\\Core\\Validator' => __DIR__ . '/../..' . '/core/Validator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'app\\core\\Singleton' => __DIR__ . '/../..' . '/core/Singleton.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

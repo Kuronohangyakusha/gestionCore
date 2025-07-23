@@ -3,7 +3,9 @@
     "description": "core de notre projet",
     "autoload": {
         "psr-4": {
-            "Ciara\\Cor\\": "src/"
+           "App\\Core\\Abstract\\": "core/abstract/",
+            "App\\Core\\Middlewares\\": "core/middlewares/",
+            "App\\Core\\":"core/"
         }
     },
     "authors": [
